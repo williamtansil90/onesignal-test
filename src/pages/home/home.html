@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+ <h3>Token: {{token}}</h3>
+  <h3>Current Latitude: {{lat}}</h3>
+  <h3>Current Longitude: {{lng}}</h3>
+  
+  <button ion-button full primary (click)="startTracking()">Start Tracking</button>
+  <button ion-button full primary (click)="stopTracking()">Stop Tracking</button>
+  <button ion-button full primary (click)="checkToken()">Get Token</button>
+  <button ion-button full primary (click)="doVibrate()">Vibrate 1</button>
+  <button ion-button full primary (click)="doVibrate2()">Vibrate 2</button>
+ 
+</ion-content>
